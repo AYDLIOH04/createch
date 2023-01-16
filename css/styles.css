@@ -4,13 +4,13 @@
 
 /* * Root */
 :root {
-    --bg-color-header: rgb(207, 206, 206);
-    --color-text-header: #333;
+    --bg-color-header: #49ABE4;
 
-    --bg-color-news: antiquewhite;
-    --bg-color-news-hover: rgb(253, 219, 173);
+    --color-text-header: #fff;
+    --color-text-page: #333;
 
-    --button-color: rgb(241, 168, 10);
+    --bg-color-first: #49ABE4;
+    --bg-color-second: #495a9b;
 }
 
 /* ? Base */
@@ -22,7 +22,7 @@
 	border: 0;
 }
 
-html {
+html { 
 	height: 100%;
 }
 
@@ -40,6 +40,48 @@ body {
     width: 1500px;
 }
 
+.container::after {
+    content: "";
+    border: 0;
+    height: 2px;
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(73, 171, 228,0)),color-stop(rgba(73, 171, 228,.75)),to(rgba(73, 171, 228,0)));
+    background-image: -o-linear-gradient(left,rgba(73, 171, 228,0),rgba(73, 171, 228,.75),rgba(73, 171, 228,0));
+    background-image: linear-gradient(90deg,rgba(73, 171, 228,0),rgba(73, 171, 228,.75),rgba(73, 171, 228,0));
+
+    margin: auto;
+    max-width: 1134px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+
+    transform: translate3d(0, -45px, 0);
+}
+
+
+/* ? About */
+
+.about__text {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,12 +90,17 @@ body {
     height: 2000px;
 }
 
-
-
-
 @media (max-width: 1920px) {
+    .header {
+        height: 15vh;
+    }
+    
+    .inner {
+        height: 85vh;
+    }
+
     .nav__item {
-        margin-left: 15px;
+        margin-left: 20px;
         font-size: 22px;
     }
 
@@ -64,6 +111,15 @@ body {
     .contacts__item {
         font-size: 13px;
         margin-left: 20px;
+    }
+
+    .news__text {
+        max-width: 1000px;
+        font-size: 22px;
+    }
+
+    .news__button {
+        font-size: 22px;
     }
 }
 
@@ -82,7 +138,7 @@ body {
         width: 800px;
     }
     .news__text {
-        font-size: 30px;
+        font-size: 20px;
     }
     
 }
@@ -92,3 +148,4 @@ body {
         height: 100px;
     }
 }
+

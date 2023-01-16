@@ -60,7 +60,7 @@
 
 .contacts__item {
     text-align: center;
-    color: #333;
+    color: var(--color-text-header);
     font-weight: 500;
     margin-left: 40px;
     text-transform: uppercase;
