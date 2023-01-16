@@ -12,4 +12,24 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+
+
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      1000: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      1360: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      1920: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    }
+});
