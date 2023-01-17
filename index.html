@@ -9,86 +9,139 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/email.js"></script>
 </head>
 <body>
-    
-    <header class="header">
-        <img src="images/Gorizontal/gor-logo_white.png" alt="Create Technology" class="header__logo">
-        <nav class="header__nav">
-            <div class="nav">
-                <a href="#" class="nav__item">новости</a>
-                <a href="#" class="nav__item">О нас</a>
-                <a href="#" class="nav__item">Вендоры</a>
-                <a href="#" class="nav__item">Схема работы</a>
-                <a href="#" class="nav__item">контакты</a>
-                <!-- TODO Сделать активную ссылку -->
-            </div>
-            <div class="contacts__item">
-                <div>ТЕЛ. +79221335452</div>
-                <div>E-MAIL: info@createchnology.ru</div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="news">
-        <div class="container">
-            <div class="news__inner">
-                <div class="news__text">ООО «КРЕАТЕХ» осуществляет поставку оборудования  производителей официально прекративших работу в Российской Федерации</div>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/5.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/7.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/6.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/Vertical/vert-logo_color.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/logo_comp/8.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/Vertical/vert-logo_black.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/Gorizontal/gor-logo_color.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/Gorizontal/gor-logo_black.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/Gorizontal/gor-logo_black.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+    <div class="page">
+        <header class="header lock-padding">
+            <img src="images/Gorizontal/gor-logo_white.png" alt="Create Technology" class="header__logo">
+            <nav class="header__nav">
+                <div class="nav">
+                    <a href="#" class="nav__item">новости</a>
+                    <a href="#" class="nav__item">О нас</a>
+                    <a href="#" class="nav__item">Вендоры</a>
+                    <a href="#" class="nav__item">Схема работы</a>
+                    <a href="#" class="nav__item">контакты</a>
+                    <!-- TODO Сделать активную ссылку -->
                 </div>
-                <a href="#" class="news__button">Посмотреть список вендеров</a>
-                <!-- TODO Прокрутка -->
+                <div class="contacts__item">
+                    <div>ТЕЛ. +79221335452</div>
+                    <div>E-MAIL: info@createchnology.ru</div>
+                </div>
+            </nav>
+        </header>
+    
+        <section class="news">
+            <div class="container">
+                <div class="news__inner">
+                    <div class="news__text">ООО «КРЕАТЕХ» осуществляет поставку оборудования  производителей официально прекративших работу в Российской Федерации</div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/7.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Vertical/vert-logo_color.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/logo_comp/8.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Vertical/vert-logo_black.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Gorizontal/gor-logo_color.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Gorizontal/gor-logo_black.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Gorizontal/gor-logo_black.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <a href="#popup" class="button popup-link">Оформить запрос</a>
+                </div>
+            </div>
+        </section>
+            
+        <section class="about">
+            <div class="container">
+                <div class="about__text">О нас АНАНАС</div>
+            </div>
+        </section>
+    
+        <div class="space"></div>
+    
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup">x</a>
+                    <div class="form">
+                        <form action="#" class="form__body" id="form">
+                            <div class="form__title">Оформление запроса</div>
+                            <div class="form__item">
+                                <label for="formComp" class="form__label">Название организации*</label>
+                                <input id="formComp" type="text" name="comp" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formName" class="form__label">Имя*</label>
+                                <input id="formName" type="text" name="name" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formEmail" class="form__label">E-mail*</label>
+                                <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                            </div>
+                            <div class="form__item">
+                                <label for="formNumber" class="form__label">Тел.*</label>
+                                <input id="formNumber" type="text" name="number" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formTechHaract" class="form__label">Необходимые технические характеристики*</label>
+                                <input id="formTechHaract" type="text" name="techharact" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formId" class="form__label">Наименование запрашиваемого оборудования*</label>
+                                <input id="formId" type="text" name="id" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formArticl" class="form__label">Артикул</label>
+                                <input id="formArticl" type="text" name="articl" class="form__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="formCount" class="form__label">Количество, шт.*</label>
+                                <input id="formCount" type="text" name="count" class="form__input _req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formComents" class="form__label">Коментарии</label>
+                                <textarea name="coments" id="formComents" class="form__input"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="form__button button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-        
-    <section class="about">
-        <div class="container">
-            <div class="about__text">О нас АНАНАС</div>
-        </div>
-    </section>
-
-    <div class="space"></div>
+    </div>
 </body>
 </html>
 

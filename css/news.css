@@ -43,7 +43,7 @@
 }
 
 /* ? Button */
-.news__button {
+.button {
     width: 20em;
     height: 2em;
     margin: 75px 0;
@@ -61,7 +61,7 @@
     transition: all .2s linear;
 }
 
-.news__button:hover {
+.button:hover {
     transform: translate3d(-10px, -10px, 0);
     box-shadow: 10px 10px var(--bg-color-second);
 }
