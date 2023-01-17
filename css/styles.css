@@ -1,6 +1,8 @@
 @import url(header.css);
 @import url(news.css);
 @import url(popup.css);
+@import url(about.css);
+@import url(form.css);
 
 
 /* * Root */
@@ -38,13 +40,13 @@ body {
 /* ? Container */
 .container {
     margin: 0 auto;
-    width: 1500px;
+    width: 1200px;
 }
 
 .container::after {
     content: "";
     border: 0;
-    height: 2px;
+    height: 2.5px;
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(73, 171, 228,0)),color-stop(rgba(73, 171, 228,.75)),to(rgba(73, 171, 228,0)));
     background-image: -o-linear-gradient(left,rgba(73, 171, 228,0),rgba(73, 171, 228,.75),rgba(73, 171, 228,0));
     background-image: linear-gradient(90deg,rgba(73, 171, 228,0),rgba(73, 171, 228,.75),rgba(73, 171, 228,0));
@@ -66,109 +68,9 @@ body {
 }
 
 
-/* ? About */
-
-
-
-.about__text {
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+/* ? Venders */
+.venders__inner {
 }
-
-
-/* ? Form */
-.form * {
-    outline: none;
-}
-
-.form {
-    max-width: 550px;
-    margin: 0 auto;
-}
-
-.popup__content {
-    position: relative;
-}
-
-.popup__content::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(51, 51, 51, 0.9) url('https://i.gifer.com/3BBF.gif') center / 200px no-repeat;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: all  .5s ease 0s;
-}
-
-.popup__content._sending::after{
-    opacity: 1;
-    visibility: visible;
-}
-
-
-.form__title {
-    font-size: 30px;
-    margin-bottom: 1em;
-}
-
-.form__item {
-    margin-bottom: 20px;
-}
-
-.form__label {
-    font-size: 18px;
-    display: block;
-    margin-bottom: 10px
-}
-
-.form__input {
-    background-color: rgb(196, 196, 196);
-    height: 25px;
-    padding: 0 5px;
-    border-radius: 5px;
-    
-    width: 98%;
-    
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.form__input:focus {
-    box-shadow: 0 0 15px var(--bg-color-first);
-}
-
-.form__input._error {
-    box-shadow: 0 0 15px red;
-}
-
-textarea.form__input {
-    min-height: 120px;
-    resize: vertical;
-    padding: 5px;
-}
-
-
-.form__button {
-    width: 100%;
-    min-height: 60px;
-    margin: 0;
-    font-size: 26px;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -202,12 +104,9 @@ textarea.form__input {
 
     .news__text {
         max-width: 1000px;
-        font-size: 22px;
+        font-size: 18px;
     }
-
-    .news__button {
-        font-size: 22px;
-    }
+ 
 }
 
 @media (max-width: 1360px) {
@@ -239,4 +138,3 @@ textarea.form__input {
         width: 600px;
     }
 }
-

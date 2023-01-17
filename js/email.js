@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 method: 'POST',
                 body: formData
             })
+
+            console.log(response)
+
             if (response.ok){
                 let result = await response.json()
                 alert(result.message)
-                formPreview.innerHTML = ''
                 form.reset()
                 popupContent.classList.remove('_sending')
             } else {
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 form.reset()
                 popupContent.classList.remove('_sending')
             }
+
         } else {
             alert('Заполните обязательные поля!')
         }

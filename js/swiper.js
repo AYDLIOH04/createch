@@ -26,10 +26,6 @@ var swiper = new Swiper(".mySwiper", {
       1360: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-      },
-      1920: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-      },
+      }
     }
 });
