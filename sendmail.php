@@ -1,11 +1,9 @@
 <?php
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-
     require 'phpmailer/Exception.php';
     require 'phpmailer/PHPMailer.php';
+    require 'phpmailer/SMTP.php';
 
-    $mail = new PHPMailer(true);
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
 
@@ -30,7 +28,7 @@
 
     $mail->Body = $body;
     if (!$mail->send()){
-        $message = 'Ошибка!!!';
+        $message = 'Ошибка!';
     } else {
         $message = 'Запрос отправлен!';
     }
