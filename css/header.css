@@ -38,6 +38,10 @@
     margin-left: 50px;
 }
 
+.nav__item:first-child {
+    margin-left: 0;
+}
+
 .nav__item::after{
     content: "";
     display: block;

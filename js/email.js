@@ -8,32 +8,56 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault()
         let error = formValidate(form)
         let formData = new FormData(form)
-
         if (error === 0){
             const popupContent = document.querySelector('.popup__content')
             popupContent.classList.add('_sending')
 
-            let response = await fetch('sendmail.php', {
-                method: 'POST',
-                body: formData
-            })
-
-            console.log(response)
-
-            if (response.ok){
-                let result = await response.json()
-                alert(result.message)
+            // TODO Отправка на почту тут
+            // let response = await fetch('sendmail.php', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+            // 
+            // console.log(response)
+            // 
+            // if (response.ok){
+            //     let result = await response.json()
+            //     alert(result.message)
+            // } else {
+            //     alert("Ошибка!")
+            // }
+            
+            
+            
+            setTimeout(() => {
                 form.reset()
                 popupContent.classList.remove('_sending')
-            } else {
-                alert("Ошибка!")
-                form.reset()
-                popupContent.classList.remove('_sending')
-            }
+                
+                // TODO Когда отправка на почту будет готова, нужно сделать проверку if(response.ok)
+                const mail = createObject("._form")
+                formAlert(mail) 
+            }, 1000)
 
         } else {
             alert('Заполните обязательные поля!')
         }
+    }
+
+    function createObject(className) {
+        let data = document.querySelectorAll(className)
+        const mail = {}
+        for (let i = 0; i < data.length; i+=2) {
+            mail[data[i].textContent] = data[i + 1].value
+        }
+        return mail
+    }
+
+    function formAlert(mail) {
+        let ans = 'ЗАПРОС ОТПРАВЛЕН\n\n' 
+        for (var key in mail) {
+            ans += `${key}:   ${mail[key]}\n`
+        }
+        alert(ans)
     }
 
     function formValidate(form) {

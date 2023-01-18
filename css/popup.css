@@ -24,6 +24,11 @@ body.lock {
     transition: all .8s ease 0s;
 }
 
+strong {
+    color: #f00;
+}
+
+
 .popup.open {
     opacity: 1;
     visibility: visible;
