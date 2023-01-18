@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             
             setTimeout(() => {
-                form.reset()
-                popupContent.classList.remove('_sending')
-                
                 // TODO Когда отправка на почту будет готова, нужно сделать проверку if(response.ok)
                 const mail = createObject("._form")
                 formAlert(mail) 
+                
+                form.reset()
+                popupContent.classList.remove('_sending')
             }, 1000)
 
         } else {
