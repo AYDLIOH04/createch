@@ -3,6 +3,9 @@
 @import url(popup.css);
 @import url(about.css);
 @import url(form.css);
+@import url(venders.css);
+@import url(work.css);
+@import url(contacts.css);
 
 
 /* * Root */
@@ -43,7 +46,8 @@ body {
     width: 1200px;
 }
 
-.container::after {
+
+hr {
     content: "";
     border: 0;
     height: 2.5px;
@@ -64,20 +68,55 @@ body {
     margin-inline-end: auto;
     overflow: hidden;
 
+    margin-bottom: 40px;
+}
+
+.hr__news {
     transform: translate3d(0, -45px, 0);
+    margin-bottom: 0;
+}
+
+.container__title {
+    text-align: center;
+
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogn {
+    text-align: center;
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slogn::after {
+    content: "";
+    border: 0;
+    height: 3px;
+    background: var(--bg-color-second);
+
+    max-width: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: block;
+
+
+    margin: 40px auto;
+    margin-top: 55px;
 }
 
 
-/* ? Venders */
-.venders__inner {
-}
 
 
 
-/* TODO Что-то надо делать */
-.space {
-    height: 2000px;
-}
+
+
 
 @media (max-width: 1920px) {
     .header {

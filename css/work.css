@@ -1,0 +1,30 @@
+/* ? Work */
+.first {
+    position: relative;
+    top: 75px;
+}
+
+.scheme {
+    padding-left: 40px;
+    max-width: 100%;
+}
+
+.scheme__item {
+    max-width: 250px;
+    font-size: 16px;
+    color: var(--bg-color-first);
+    font-weight: 700;
+}
+
+.work__wrapper {
+    height: 450px;
+    background: url(/images/scheme.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.scheme {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 10px;
+}

@@ -1,13 +1,4 @@
 /* ? About */
-.container__title {
-    text-align: center;
-
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-
 .about__inner {
     text-align: center;
 
@@ -18,42 +9,18 @@
     margin-bottom: 50px;
 
     font-size: 18px;
+    max-width: 1000px;
 }
 
-.slogn {
-    text-align: center;
 
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
 
 .wrapper {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
-.wrapper__list {
-    width: 55%;
-}
-
-.list {
-    padding: 0 15px;
-}
-
-.list__title {
-    text-align: start;
-    font-size: 20px;
-    margin-bottom: 1em;
-}
-
-.list__text {
-    font-size: 18px;
-    text-align: start;
-    margin-bottom: 1em;
-}
 
 .wrapper__img{
     width: 45%;
@@ -63,4 +30,28 @@
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+/* List */
+.list {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+}
+
+.list__title {
+    font-size: 20px;
+    font-weight: 600;
+
+    padding-bottom: 20px;
+}
+
+
+
+.list li {
+    font-size: 16px;
+    padding: 5px 0;
 }

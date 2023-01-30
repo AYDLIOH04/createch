@@ -7,13 +7,18 @@ const timeout = 800
 
 
 
-const popupLink = document.querySelector('.popup-link')
-popupLink.addEventListener("click", function(e) {
-    const popupName = popupLink.getAttribute('href').replace("#", '')
-    const currentPopup = document.getElementById(popupName)
-    popupOpen(currentPopup)
-    e.preventDefault()
-})
+const popupLinks = document.querySelectorAll('.popup-link')
+if (popupLinks.length > 0) {
+    for (let index = 0; index < popupLinks.length; index++){
+        popupLink = popupLinks[index]
+        popupLink.addEventListener("click", function(e) {
+            const popupName = popupLink.getAttribute('href').replace("#", '')
+            const currentPopup = document.getElementById(popupName)
+            popupOpen(currentPopup)
+            e.preventDefault()
+        })
+    }
+}
 
 const popupCloseIcon = document.querySelector('.close-popup')
 popupCloseIcon.addEventListener('click', function(e){
