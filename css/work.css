@@ -18,7 +18,7 @@
 
 .work__wrapper {
     height: 450px;
-    background: url(/images/scheme.png) no-repeat;
+    background: url("../images/scheme.png") no-repeat;
     background-size: 100% auto;
 }
 
