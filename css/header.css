@@ -6,6 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    transition: all .2s;
+}
+
+.fixed {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
 }
 
 .header__logo {
@@ -17,6 +27,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.text__logo {
+    display: none;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-header);
+}
+
 
 
 
@@ -54,6 +73,10 @@
     transition: opacity .2s linear;
 }
 
+.nav__item.active::after{
+    opacity: 1;
+}
+
 .nav__item:hover::after {
     opacity: 1;
 }
@@ -70,3 +93,5 @@
     text-transform: uppercase;
 }
 
+
+/* TODO toggle */

@@ -7,23 +7,26 @@
     <title>Create Technology</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="https://kit.fontawesome.com/609ebd94a9.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
     <script defer src="js/popup.js"></script>
-    <script defer src="js/email.js"></script>
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/header.js"></script>
 </head>
 <body>
     <div class="page">
-        <header class="header lock-padding">
+        <header class="header lock-padding" id="header">
             <img src="images/Gorizontal/gor-logo_white.png" alt="Create Technology" class="header__logo">
+            <div class="text__logo">CreaTech</div>
             <nav class="header__nav">
-                <div class="nav">
-                    <a href="#" class="nav__item">новости</a>
-                    <a href="#" class="nav__item">О нас</a>
-                    <a href="#" class="nav__item">Вендоры</a>
-                    <a href="#" class="nav__item">Схема работы</a>
-                    <a href="#" class="nav__item">контакты</a>
+                <div class="nav" id="nav">
+                    <a href="#" data-scroll="#news" class="nav__item" id="scroll__news">новости</a>
+                    <a href="#" data-scroll="#about" class="nav__item" id="scroll__about">О нас</a>
+                    <a href="#" data-scroll="#venders" class="nav__item" id="scroll__vend">Вендоры</a>
+                    <a href="#" data-scroll="#work" class="nav__item" id="scroll__work">Схема работы</a>
+                    <a href="#" data-scroll="#contacts" class="nav__item" id="scroll__cont">контакты</a>
                     <!-- TODO Сделать активную ссылку -->
                 </div>
                 <div class="contacts__item">
@@ -33,7 +36,7 @@
             </nav>
         </header>
     
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <div class="news__inner">
                     <div class="news__text">ООО «КРЕАТЕХ» осуществляет поставку оборудования  производителей официально прекративших работу в Российской Федерации</div>
@@ -85,7 +88,7 @@
         </section>
         <hr class="hr__news">
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="container__title">О нас</div>
                 <div class="slogn">Компания ООО «КРЕАТЕХ» полностью разделяет Ваши взгляды</div>
@@ -115,7 +118,7 @@
         </section>
         <hr>
 
-        <section class="venders">
+        <section class="venders" id="venders">
             <div class="container">
                 <div class="container__title">Вендеры</div>
                 <div class="slogn">ООО «Креатех» осуществляет поставку оборудования популярных вендоров</div>
@@ -151,7 +154,7 @@
         </section>
         <hr>
 
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <div class="container__title">Схема работы</div>
                 <div class="work__wrapper">
@@ -170,10 +173,10 @@
         </section>
         <hr>
         
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="container__title">Контакты</div>
-                <div class="contacts__btn__up">
+                <div class="contacts__btn__up" data-scroll="#news">
                     <a href="#"><i class="fa-solid fa-arrow-up"></i>  Наверх</a>
                 </div>
                 <div class="contacts__wrapper">
@@ -274,5 +277,3 @@
     </div>
 </body>
 </html>
-
-

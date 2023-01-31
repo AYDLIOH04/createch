@@ -119,13 +119,23 @@ hr {
 
 
 @media (max-width: 1920px) {
+    .contacts {
+        margin: 0;
+    }
+
+
     .header {
-        height: 15vh;
+        height: 70px;
     }
-    
-    .inner {
-        height: 85vh;
+
+    .header__logo {
+        display: none;
     }
+
+    .text__logo {
+        display: inline;
+    }
+
 
     .nav__item {
         margin-left: 20px;
@@ -170,7 +180,7 @@ hr {
 
 @media (max-width: 1050px){
     .header {
-        height: 100px;
+        height: 70px;
     }
 
     .container {

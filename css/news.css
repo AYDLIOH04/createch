@@ -6,6 +6,7 @@
     align-items: center;
 
     height: 85vh;
+    padding-top: 15vh;
 
     transition: all .1s linear;
 }
@@ -65,4 +66,3 @@
     transform: translate3d(-10px, -10px, 0);
     box-shadow: 10px 10px var(--bg-color-second);
 }
-
