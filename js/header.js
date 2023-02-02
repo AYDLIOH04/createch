@@ -27,12 +27,9 @@ $(function() {
         var height = $(window).scrollTop()
         if (height === 0){
             $("#nav a").removeClass('active')
+            $("#header").removeClass('fixed')
         } else {
-            if (height > header.height()){
-                $("#header").addClass('fixed')
-            } else {
-                $("#header").removeClass('fixed')
-            }
+            $("#header").addClass('fixed')
             ifScroll("#scroll__news", "#news", height)
             ifScroll("#scroll__about", "#about", height)
             ifScroll("#scroll__vend", "#venders", height)
