@@ -5,29 +5,48 @@
 
 .venders__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.vender {
-    width: 12.50%;
-    border: 1px solid #e1e1e1;
-    box-sizing: border-box;
-    position: relative;
 
-    transition: all 0.2s;
+.vender {
+    width: 14%;
+    border: 1px solid #e1e1e1;
+
+    transition: border-color 0.2s;
+    transition: box-shadow 0.2s;
+    transition: transform 0.2s;
+}
+
+.vender a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
 }
 
 .vender:hover {
+    z-index: 1;
+    background-color: #fff;
+
+
     border-color: var(--bg-color-second);
     box-shadow: 0 0 10px var(--bg-color-second);
-
     transform: scale(1.1);
-    background-color: #fff;
-    z-index: 1;
 }
+
 
 .vender img {
     display: block;
     width: 100%;
     height: auto;
 }
+
+.without__padding {
+    padding: 0;
+}
+
