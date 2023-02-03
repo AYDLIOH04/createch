@@ -4,6 +4,9 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
